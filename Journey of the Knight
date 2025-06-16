@@ -1,0 +1,31 @@
+# Python
+
+# cook your dish here
+t = int(input())
+for _ in range(t):
+    X1, Y1, X2, Y2 = map(int, input().split())
+    print("Yes" if (X1 + Y1 + X2 + Y2) % 2 == 0 else "No")
+
+
+
+# Java
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-->0){
+		    int X1 = s.nextInt();
+		    int Y1 = s.nextInt();
+		    int X2 = s.nextInt();
+		    int Y2 = s.nextInt();
+		    System.out.println((X1+Y1+X2+Y2) % 2 == 0?"Yes":"No");
+		}
+	}
+}
