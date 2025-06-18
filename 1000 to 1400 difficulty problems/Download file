@@ -1,0 +1,22 @@
+# Python
+
+
+TC = int(input())
+
+for _ in range(TC):
+    N, K = map(int, input().split())
+    usage = []
+    for _ in range(N):
+        Ti, Di = map(int, input().split())
+        usage.append((Ti, Di))
+    
+    cost = 0
+    for Ti, Di in usage:
+        if K >= Ti:
+            K -= Ti  # All free
+        else:
+            chargeable_minutes = Ti - K
+            cost += chargeable_minutes * Di
+            K = 0  # No more free minutes
+
+    print(cost)
