@@ -1,7 +1,3 @@
-# Python
-
-
-# cook your dish here
 t = int(input())
 for _ in range(t):
     sides = list(map(int, input().split()))
