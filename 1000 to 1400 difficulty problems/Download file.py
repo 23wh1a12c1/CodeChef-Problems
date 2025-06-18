@@ -1,6 +1,3 @@
-# Python
-
-
 TC = int(input())
 
 for _ in range(TC):
